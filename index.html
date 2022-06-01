@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/app.js" defer></script>
+    <title>API Météo</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light sabah">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Météo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="row d-flex flex-wrap justify-content-center gx-4">
+            <div class="card my-2" style="width: 18rem;">
+                <img src="/assets/img/day/01d.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lundi</h5>
+                    <p class="card-text">Aujourd'hui le temps est nuageux avec quelques éclaircis.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Température <span class="temperature"></span> °C</li>
+                    <li class="list-group-item">Humidité<span class="hygrometrie"></span> %</li>
+                    <li class="list-group-item">Heure</li>
+                    <li class="list-group-item">Pression</li>
+                    <li class="list-group-item">Vitesse du vent</li>
+                </ul>
+            </div>
+            <div class="card my-2" style="width: 18rem;">
+                <img src="/assets/img/day/01d.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lundi</h5>
+                    <p class="card-text">Aujourd'hui le temps est nuageux avec quelques éclaircis.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Température</li>
+                    <li class="list-group-item">Humidité</li>
+                    <li class="list-group-item">Heure</li>
+                    <li class="list-group-item">Pression</li>
+                    <li class="list-group-item">Vitesse du vent</li>
+                </ul>
+            </div>
+            <div class="card my-2" style="width: 18rem;">
+                <img src="/assets/img/day/01d.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lundi</h5>
+                    <p class="card-text">Aujourd'hui le temps est nuageux avec quelques éclaircis.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Température</li>
+                    <li class="list-group-item">Humidité</li>
+                    <li class="list-group-item">Heure</li>
+                    <li class="list-group-item">Pression</li>
+                    <li class="list-group-item">Vitesse du vent</li>
+                </ul>
+            </div>
+            <div class="card my-2" style="width: 18rem;">
+                <img src="/assets/img/day/01d.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lundi</h5>
+                    <p class="card-text">Aujourd'hui le temps est nuageux avec quelques éclaircis.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Température</li>
+                    <li class="list-group-item">Humidité</li>
+                    <li class="list-group-item">Heure</li>
+                    <li class="list-group-item">Pression</li>
+                    <li class="list-group-item">Vitesse du vent</li>
+                </ul>
+            </div>
+            <div class="card my-2" style="width: 18rem;">
+                <img src="/assets/img/day/01d.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lundi</h5>
+                    <p class="card-text">Aujourd'hui le temps est nuageux avec quelques éclaircis.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Température</li>
+                    <li class="list-group-item">Humidité</li>
+                    <li class="list-group-item">Heure</li>
+                    <li class="list-group-item">Pression</li>
+                    <li class="list-group-item">Vitesse du vent</li>
+                </ul>
+            </div> <div class="card my-2" style="width: 18rem;">
+                <img src="/assets/img/day/01d.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lundi</h5>
+                    <p class="card-text">Aujourd'hui le temps est nuageux avec quelques éclaircis.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Température</li>
+                    <li class="list-group-item">Humidité</li>
+                    <li class="list-group-item">Heure</li>
+                    <li class="list-group-item">Pression</li>
+                    <li class="list-group-item">Vitesse du vent</li>
+                </ul>
+            </div>
+            <div class="card my-2" style="width: 18rem;">
+                <img src="/assets/img/day/01d.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lundi</h5>
+                    <p class="card-text">Aujourd'hui le temps est nuageux avec quelques éclaircis.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Température</li>
+                    <li class="list-group-item">Humidité</li>
+                    <li class="list-group-item">Heure</li>
+                    <li class="list-group-item">Pression</li>
+                    <li class="list-group-item">Vitesse du vent</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <p>Température actuelle : <span class="temp"></span> °C.</p>
+    <p>Température actuelle (arrondie) : <span class="roundedTemp"></span> °C.</p>
+    <p>Température dans 3h (arrondie) : <span class="threeHoursTemp"></span> °C.</p>
+    <p>Températures des 5 prochaines heures :</p>
+    <ul>
+        <li><span class="fiveHoursTemp"></span> °C.</li>
+        <li><span class="fiveHoursTemp"></span> °C.</li>
+        <li><span class="fiveHoursTemp"></span> °C.</li>
+        <li><span class="fiveHoursTemp"></span> °C.</li>
+        <li><span class="fiveHoursTemp"></span> °C.</li>
+    </ul>
+    <p>La météo dans 2 jours : <span class="weatherInTwoDays"></span>.</p>
+    <img src="" alt="" class="weatherInTwoDays-img">
+</body>
+
+</html>
